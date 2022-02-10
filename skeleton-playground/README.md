@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+## 스켈레톤이란 
+- 웹페이지에서 로드 시간이 짧아 보아 게 하는 몇 가지 방법 중 하나가 스켈레톤이다 
+- 데이터가 로드되기 전에 컨텐츠의 자리비움을 표시하여 사용자가 기다리는 시간을 덜 지루하게 하는 ui이다 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 
 
-## Available Scripts
+## 장점 
+- 실제 테스트 결과 블랭크 페이지 < 스피너 < 스켈레톤 순서대로 더 빠르다고 느끼게 된다.
 
-In the project directory, you can run:
 
-### `npm start`
+ 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 단점 
+- 스켈레톤을 화면마다 표시해야하기때문에 시간이나 비용이 많이 든다. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 스켈레톤 규칙
+- 켈레톤은 콘텐츠의 로드를 방해하면 안된다!<br>
+  실제 콘텐츠는 데이터를 가용할 수 있는 시점이 되면 즉시 스켈레톤을 대체해야함<br><br>
+- 디자인 할 때 애니메이션을 사용하는 것이 좋습니다.<br>
+애니메이션은 wave, pulse 중 wave 를 사용하는 것이 로딩 시간을 더 짧게 느끼게끔 한다.<br><br>
+- 느리고 안정적인 애니메이션을 사용하는 것이 로딩 시간을 더 짧게 느끼게끔 합니다.
+ 
