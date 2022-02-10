@@ -23,5 +23,5 @@
 애니메이션은 wave, pulse 중 wave 를 사용하는 것이 로딩 시간을 더 짧게 느끼게끔 한다.<br><br>
 - 느리고 안정적인 애니메이션을 사용하는 것이 로딩 시간을 더 짧게 느끼게끔 합니다.
 
-### 구현 화면 
+## 구현 화면 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/73993670/153374532-3f92e4b4-919d-47db-8c38-d18954c157c0.gif)
