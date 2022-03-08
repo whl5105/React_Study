@@ -3,6 +3,10 @@
 1. 서로 다른 타입의 두 엘리먼트는 서로 다른 트리를 만들어낸다.
 2. 개발자가 key prop을 통해, 여러 렌더링 사이에서 어떤 자식 엘리먼트가 변경되지 않아야 할지 표시해 줄 수 있다.
 
+![image](https://user-images.githubusercontent.com/73993670/157224621-fce2dba3-13f4-48a8-92fb-b3b1c0d2b7ef.png)
+
+
+
 <br/>
 
 # Reconciliation
