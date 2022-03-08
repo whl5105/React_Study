@@ -13,3 +13,5 @@
 - 터치 친화적인지 확인 (좌우 화살표가아닌 스와이프해서 넘기는 컨텐츠)
 
 
+## 구현 화면 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/73993670/156994541-04412a78-8ae5-439a-9379-d9a69c473e4d.gif)
