@@ -25,7 +25,10 @@
 
 ## Request flow diagram
 - Browser
-브라우저에서 res 요청 -> 서비스워커가 받음 -> res clone -> msw 전송 -> 모킹 데이터 응답 
+
+![image](https://user-images.githubusercontent.com/73993670/157840757-08c6b989-229b-4edc-98ed-372598f2c471.png)
+
+응답 요청 -> 서비스 봉사자가 상태 -> res clone -> msw 전송 -> 모킹 데이터 응답
 
 ## install 
 ```
