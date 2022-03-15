@@ -20,24 +20,24 @@ export const handlers = [
       const originalResponseData = await originalResponse.json();
 
       return res(
-        // Send a valid HTTP status code
-        ctx.status(403),
-        // And a response body, if necessary
-        ctx.json({
-          errorMessage: `Data not found`,
-        })
-
+        // // Send a valid HTTP status code
+        // ctx.status(403),
+        // // And a response body, if necessary
         // ctx.json({
-        //   data: {
-        //     people: [
-        //       ...originalResponseData.data.people,
-        //       {
-        //         name: id,
-        //         age: 135,
-        //       },
-        //     ],
-        //   },
+        //   errorMessage: `Data not found`,
         // })
+
+        ctx.json({
+          data: {
+            people: [
+              ...originalResponseData.data.people,
+              {
+                name: `searchParamsData:${id}`,
+                age: 135,
+              },
+            ],
+          },
+        })
       );
     }
   ),
