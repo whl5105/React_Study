@@ -8,8 +8,8 @@ const Item = ({name , age}) => {
   )
 }
 
-const url = "https://raw.githubusercontent.com/techoi/raw-data-api/main/simple-api.json";
-const url2 = "";
+const url = "https://raw.githubusercontent.com/techoi/raw-data-api/main/simple-api.json?id=React";
+const url2 = "/login";
 
 export default function TestMocking() {
   const [data, setData] = useState(null);
@@ -25,10 +25,13 @@ export default function TestMocking() {
         return res.json();
     })
     .then((json)=>{
+      if(json.errorMessage){
+        throw new Error(json.errorMessage);
+      }
       setData(json.data);
     })
     .catch((err)=>{
-      setErr("err발생");
+      setErr(`Somthing Wrong : ${err}`);
     })
   }
   const handleClick2 = () =>{  
