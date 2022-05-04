@@ -3,6 +3,7 @@ import CurrentWeather from './CurrentWeather/CurrentWeather'
 import ExtraInfo from './ExtraInfo/ExtraInfo';
 import "./styles.css";
 import TempInfo from './TempInfo/TempInfo';
+import WeatherTab from './WeatherTab/WeatherTab';
 
 function WeatherApp() {
   return (
@@ -10,6 +11,7 @@ function WeatherApp() {
         <CurrentWeather/>
         <TempInfo/>
         <ExtraInfo/>
+        <WeatherTab/>
       </div>
   )
 }
