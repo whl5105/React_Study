@@ -6,6 +6,7 @@ const APIKEY ='0b975784e6909fc63e6db77261e254f0';
 
 function WeatherProvider({ children }) {
   const [weatherInfo, setWeatherInfo] = useState({});
+  console.log(weatherInfo);
 
   const getWeatherInfo = async () => {
     try {
