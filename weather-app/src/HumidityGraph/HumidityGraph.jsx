@@ -35,7 +35,6 @@ function BarGraph({num}){
       <Bar
         dataKey="humidity"
         fill="#2c6cff"
-        strokeWidth={2}
         isAnimationActive={false}
         label={<CustomizedLabel />}
       />
