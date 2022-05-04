@@ -7,10 +7,6 @@ import { WeatherContext } from "../WeatherProvider/WeatherProvider";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-
 const formatXAxis = (data) => `${new Date(data * 1000).getHours()}시`;
 //라인 그래프 dot(날씨 이미지)
 const CustomizedDot = ({ payload, cx, cy }) => (
@@ -77,7 +73,6 @@ function WeatherGraph() {
     <Swiper navigation={true} modules={[Navigation]}>
       {slides}
     </Swiper>
-    // <LineGraph num={0}/>
   );
 }
 
